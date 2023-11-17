@@ -1,0 +1,62 @@
+
+label[for="hamburger"]{
+    display: none;
+    cursor: pointer;
+}
+
+label[for="hamburger"] img {
+    width: 20%; 
+}
+ul{
+    list-style: none;
+}
+section{
+    background-color: #88c1d0;
+    min-height: 100px;
+    min-width: 10%;
+    text-align: center;
+}
+
+#hamburger {
+    display: none;
+}
+
+@media screen and (min-width: 1600px) {
+    main{
+        display: flex;
+    }
+    section{
+        width: 20%;
+        margin: 20px auto;
+    }
+}
+
+@media all and (min-width: 767px) and (max-width: 1599px) {
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section{
+        margin: auto;
+        width: 45%;
+        margin: 10px auto;
+     }
+}
+
+@media screen and (max-width: 767px) {
+    nav ul li a {
+        display: none;
+    }
+    label[for="hamburger"]{
+        display: block;
+    }
+    input[type="checkbox"]:checked + label[for="hamburger"] + nav ul li a {
+        display: block;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
